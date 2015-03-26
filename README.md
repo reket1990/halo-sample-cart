@@ -40,10 +40,10 @@ Vagrant will automatically sync any changes made to these files. Feel free to us
 
 ## Challenge
 
-The first scenario has been written for you. Please implement as many of the remaining scenarios in `features/cart.feature` as you can within the next 60 minutes. Do not worry if you cannot finish all of them. Find a good stopping point and send us what you have. We are excited to see it! Zip up the entire directory and email it to `tech-interviews@hautelook.com` with your name in the email subject line.
+The first scenario has been written for you. Please implement as many of the remaining scenarios in `features/cart.feature` as you can within the next 60 minutes. Do not worry if you cannot finish all of them. Find a good stopping point and send us what you have. We are excited to see it! Zip up the entire directory and email it back to us.
 
 ### Support
 
-Need help? Please reach out to us! We know computers can be tricky things and we are happy to assist you. You should have contact details from your phone call, but if that is not working please email `tech-interviews@hautelook.com` and use a subject line that beings with _Support_. We will get back to you as soon as we can.
+Need help? Please reach out to us! We know computers can be tricky things and we are happy to assist you. You should have contact details from our email to you. We will get back to you as soon as we can.
 
 
