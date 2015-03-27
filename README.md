@@ -1,10 +1,10 @@
-# E-ccommerce Cart Sample
+# E-commerce Cart Sample
 
 The cart sample includes a Vagrantfile, behat tests and plain old PHP objects (POPOs) that model the functionality of a basic shopping cart.
 
 ## Requirements
 
-The cart sample uses Vagrant to provision and configure a Virtual Machine that satisfies all the depdendencies for the code to work.
+The cart sample uses Vagrant to provision and configure a Virtual Machine that satisfies all the dependencies for the code to work.
 
    * VirtualBox 4.3.18 (or higher). Download here: https://www.virtualbox.org/wiki/Downloads
    * Vagrant 1.7.2 (or higher). Download here: http://www.vagrantup.com/downloads
