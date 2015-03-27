@@ -36,14 +36,14 @@ Here is a high level overview of the important files in this project:
    * `src/HauteLook/Cart.php` - the sample cart class
    * `src/HauteLook/Product.php` - the same product class
 
-Vagrant will automatically sync any changes made to these files. Feel free to use whatever editor you are most comfortable with to browse and edit these files.
+Vagrant will automatically sync any changes you make to these files from your host operating system, so feel free to use whatever editor your are most comfortable with to browse and edit them.
 
 ## Challenge
 
-The first scenario has been written for you. Please implement as many of the remaining scenarios in `features/cart.feature` as you can within the next 60 minutes. Do not worry if you cannot finish all of them. Find a good stopping point and send us what you have. We are excited to see it! Zip up the entire directory and email it back to us.
+The first scenario has been written for you. Please implement as many of the remaining scenarios in `feathers/cart.feature' as you can within the next 60 minutes. We are judging you on the simplcity of your design and the correctness of the code. Make whatever changes you want to the scenario implementations and source code to accomplish that goal. Do not worry if you cannot finish all of them. Find a good stopping point and send us what you have. We are excited to see it! Zip up the entire directory and email it back to us.
 
 ### Support
 
-Need help? Please reach out to us! We know computers can be tricky things and we are happy to assist you. You should have contact details from our email to you. We will get back to you as soon as we can.
+Need help? Please reach out to us! We know computers can be tricky things and we are happy to assist you. Our contact details are in the email we sent you. We will get back to you as soon as we can.
 
 
