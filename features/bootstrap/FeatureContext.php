@@ -59,6 +59,7 @@ class FeatureContext extends BehatContext
      */
     public function mySubtotalShouldBeDollars($subtotal)
     {
+        Assert::assertEquals($subtotal, $this->cart->subtotal());
     }
 
     /**
