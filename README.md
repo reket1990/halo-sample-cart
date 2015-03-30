@@ -12,8 +12,12 @@ The cart sample uses Vagrant to provision and configure a Virtual Machine that s
 ## Installation
 
    * Make sure you have a working internet connection. The virtual machine will be downloading packages from the internet in order to configure itself.
+   * Download and install Virtualbox.
+   * Download and install Vagrant.
    * Start the Vagrant box (VM) by typing: `vagrant up`
    * During the startup process, the virtual machine will be provisioned with git, php and composer.
+
+Note: We expect installation to take 15-30 minutes to setup. If for any reason it is taking longer, please feel free to reach out to us. We are happy to [help](#support).
 
 ## Running Tests
 
