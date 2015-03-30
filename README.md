@@ -2,6 +2,8 @@
 
 The cart sample includes a Vagrantfile, behat tests and plain old PHP objects (POPOs) that model the functionality of a basic shopping cart.
 
+[![Build Status](https://travis-ci.org/hautelook/halo-sample-cart.svg)](https://travis-ci.org/hautelook/halo-sample-cart)
+
 ## Requirements
 
 The cart sample uses Vagrant to provision and configure a Virtual Machine that satisfies all the dependencies for the code to work.
