@@ -30,14 +30,14 @@ Scenario: Add a 2nd item to a cart after applying a discount
 
 Scenario: When order is under $100, and all items under 10 lb, then shipping is $5 flat
   Given I have an empty cart
-  And I add a "78" dollar "2" lb item named "dress"
+  When I add a "78" dollar "2" lb item named "dress"
   And I add a "20" dollar "1" lb item named "skirt"
   Then My subtotal should be "98" dollars
   And My total should be "103" dollars
   
 Scenario: When order is $100 or more, and each individual item is under 10 lb, then shipping is free
   Given I have an empty cart
-  And I add a "68" dollar "2" lb item named "dress"
+  When I add a "68" dollar "2" lb item named "dress"
   And I add a "20" dollar "1" lb item named "skirt"
   And I add a "20" dollar "1" lb item named "skirt"
   Then My subtotal should be "108" dollars
@@ -46,8 +46,16 @@ Scenario: When order is $100 or more, and each individual item is under 10 lb, t
 
 Scenario: Items over 10 lb always cost $20 each to ship
   Given I have an empty cart
-  And I add a "80" dollar "2" lb item named "dress"
+  When I add a "80" dollar "2" lb item named "dress"
   And I add a "10" dollar "1" lb item named "tee"
   And I add a "50" dollar "100" lb item named "couch"
   Then My subtotal should be "140" dollars
   And My total should be "160" dollars
+
+Scenario: Orders under $100 with 2 items over 10 lb should be $45 in shipping
+  Given I have an empty cart
+  When I add a "10" dollar "1" lb item named "tee"
+  And I add a "25" dollar "15" lb item named "lamp"
+  And I add a "50" dollar "25" lb item named "end table"
+  Then My subtotal should be "85" dollars
+  And My total should be "130" dollars
