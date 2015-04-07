@@ -37,12 +37,19 @@ class FeatureContext extends BehatContext
     }
 
     /**
+     * @Then /^My subtotal should be "([^"]*)" dollars$/
+     */
+    public function mySubtotalShouldBeDollars($subtotal)
+    {
+        Assert::assertEquals($subtotal, $this->cart->subtotal());
+    }
+
+    /**
      * @When /^I add a "([^"]*)" dollar item named "([^"]*)"$/
      */
     public function iAddADollarItemNamed($dollars, $product_name)
     {
-        $product = new Product($product_name, $dollars);
-        $this->cart->addProduct($product);
+        throw new PendingException();
     }
     
     /**
@@ -53,15 +60,6 @@ class FeatureContext extends BehatContext
         throw new PendingException();
     }
     
-
-    /**
-     * @Then /^My subtotal should be "([^"]*)" dollars$/
-     */
-    public function mySubtotalShouldBeDollars($subtotal)
-    {
-        Assert::assertEquals($subtotal, $this->cart->subtotal());
-    }
-
     /**
      * @Then /^My total should be "([^"]*)" dollars$/
      */
