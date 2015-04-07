@@ -1,5 +1,9 @@
 Feature: A sample e-commerce shopping cart that is similar to what NordstromRack.com | HauteLook uses in production.
 
+Scenario: Empty cart subtotal
+  Given I have an empty cart
+  Then My subtotal should be "0" dollars
+
 Scenario: Add a 10 dollar item to an empty cart
   Given I have an empty cart
   When I add a "10" dollar item named "shirt"
