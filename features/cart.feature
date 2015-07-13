@@ -56,7 +56,7 @@ Scenario: Items over 10 lb always cost $20 each to ship
   Then My subtotal should be "140" dollars
   And My total should be "160" dollars
 
-Scenario: Orders under $100 with 2 items over 10 lb should be $45 in shipping
+Scenario: Orders under $100 with multiple items over 10 lb
   Given I have an empty cart
   When I add a "10" dollar "1" lb item named "tee"
   And I add a "25" dollar "15" lb item named "lamp"
