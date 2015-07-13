@@ -8,7 +8,6 @@ use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 use PHPUnit_Framework_Assert as Assert;
 use Hautelook\Cart;
-use Hautelook\Product;
 
 /**
  * Features context.
