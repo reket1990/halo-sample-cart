@@ -1,3 +1,6 @@
 .vagrant/
 bin/
 vendor/
+
+/.idea
+/.idea_modules
