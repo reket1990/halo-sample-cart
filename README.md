@@ -10,7 +10,7 @@ The cart sample uses Vagrant to provision and configure a Virtual Machine that s
 
    * VirtualBox `4.3.x`. Download here: https://www.virtualbox.org/wiki/Downloads
       * Do not use VirtualBox `5.x.x`. It is currently not compatible with Vagrant.
-   * Vagrant `1.7.x`. Download here: http://www.vagrantup.com/downloads
+   * Vagrant `1.7.x`. Download here: https://www.vagrantup.com/downloads.html
 
 ## Installation
 
