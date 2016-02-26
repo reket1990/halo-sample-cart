@@ -41,7 +41,6 @@ Here is a high level overview of the important files in this project:
    * `features/cart.feature` - the gherkin language that describes scenarios (tests cases) for the sample cart code.
    * `features/bootstrap/FeatureContext.php` - the Behat file that parses the above `cart.feature` and executes tests.
    * `src/HauteLook/Cart.php` - the sample cart class
-   * `src/HauteLook/Product.php` - the same product class
 
 Vagrant will automatically sync any changes you make to these files from your host operating system, so feel free to use whatever editor your are most comfortable with to browse and edit them.
 
