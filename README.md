@@ -10,8 +10,6 @@ The cart sample uses Vagrant to provision and configure a Virtual Machine that s
 
    * VirtualBox `5.0.x`. Download here: https://www.virtualbox.org/wiki/Downloads
    * Vagrant `1.8.x`. Download here: https://www.vagrantup.com/downloads.html
-   * Composer. Installation instructions here: https://getcomposer.org/download/
-   * Behat. Installation instructions here: http://docs.behat.org/en/v3.0/quick_intro_pt1.html#method-1-composer-the-recommended-one
 
 ## Installation
 
