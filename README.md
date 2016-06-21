@@ -8,9 +8,8 @@ The cart sample includes a Vagrantfile, behat tests and plain old PHP objects (P
 
 The cart sample uses Vagrant to provision and configure a Virtual Machine that satisfies all the dependencies for the code to work.
 
-   * VirtualBox `4.3.x`. Download here: https://www.virtualbox.org/wiki/Download_Old_Builds_4_3
-      * Do not use VirtualBox `5.x.x`. It is currently not compatible with Vagrant.
-   * Vagrant `1.7.x`. Download here: https://www.vagrantup.com/downloads.html
+   * VirtualBox `5.0.x`. Download here: https://www.virtualbox.org/wiki/Downloads
+   * Vagrant `1.8.x`. Download here: https://www.vagrantup.com/downloads.html
 
 ## Installation
 
