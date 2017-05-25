@@ -46,15 +46,15 @@ class FeatureContext extends BehatContext
     /**
      * @When /^I add a "([^"]*)" dollar item named "([^"]*)"$/
      */
-    public function iAddADollarItemNamed($dollars, $product_name)
+    public function iAddADollarItemNamed($item_cost, $product_name)
     {
-        throw new PendingException();
+        $this->cart->addItem($item_cost, $product_name);
     }
-    
+
     /**
      * @When /^I add a "([^"]*)" dollar "([^"]*)" lb item named "([^"]*)"$/
      */
-    public function iAddADollarItemWithWeight($dollars, $lb, $product_name)
+    public function iAddADollarItemWithWeight($item_cost, $item_weight, $product_name)
     {
         throw new PendingException();
     }
@@ -72,16 +72,16 @@ class FeatureContext extends BehatContext
      */
     public function myQuantityOfProductsShouldBe($product_name, $quantity)
     {
-        throw new PendingException();
+        Assert::assertEquals($quantity, $this->cart->quantity($product_name));
     }
-    
 
     /**
      * @Given /^I have a cart with a "([^"]*)" dollar item named "([^"]*)"$/
      */
     public function iHaveACartWithADollarItem($item_cost, $product_name)
     {
-        throw new PendingException();
+        $this->cart = new Cart();
+        $this->cart->addItem($item_cost, $product_name);
     }
 
     /**
