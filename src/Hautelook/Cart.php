@@ -4,24 +4,28 @@ namespace Hautelook;
 class Cart
 {
     public $items = array();
-    public $payment_percentage = 1;
+    public $discounts = array();
 
     /* Cost functions */
     public function applyCoupon($discount)
     {
-        // Note: Should a user be allowed to apply more than one discount?
-
-        $this->payment_percentage *= 1 - $discount/100;
+        $this->discounts[] = $discount;
     }
 
     public function subtotal()
     {
         $subtotal = 0;
+        // Add items
         foreach ($this->items as $item) {
             $subtotal += $item['price'] * $item['quantity'];
         }
 
-        return $subtotal * $this->payment_percentage;
+        // Apply discounts
+        foreach ($this->discounts as $discount) {
+            $subtotal *= (100 - $discount) / 100;
+        }
+
+        return $subtotal;
     }
 
     public function total()
